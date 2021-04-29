@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -13,34 +13,39 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_Am_Rich" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="Fqn-fA-l0v">
-                                <rect key="frame" x="32" y="137.5" width="263" height="205"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4Rb-fK-SQJ">
+                                <rect key="frame" x="81" y="109" width="259" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-Er-6nE">
+                                        <rect key="frame" x="0.0" y="0.0" width="259" height="47"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="263" id="eMf-L4-LI4"/>
-                                    <constraint firstAttribute="height" constant="205" id="rLX-8q-7po"/>
+                                    <constraint firstAttribute="height" constant="47" id="zYB-Oh-Zvx"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="Fqn-fA-l0v">
+                                <rect key="frame" x="35.5" y="322.5" width="343" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251" id="Ska-ut-ICW"/>
+                                    <constraint firstAttribute="width" constant="343" id="vus-qc-XrN"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-Er-6nE">
-                                <rect key="frame" x="121" y="113" width="173" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="6Hm-TY-hO6"/>
-                                    <constraint firstAttribute="width" constant="173" id="ws8-EU-48k"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.14117647058823529" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vmh-Er-6nE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="2bz-KZ-i6O"/>
-                            <constraint firstItem="Fqn-fA-l0v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3.5" id="4x4-n0-19Q"/>
-                            <constraint firstItem="Fqn-fA-l0v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8NY-fe-yBE"/>
-                            <constraint firstItem="vmh-Er-6nE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="eel-VK-V3T"/>
+                            <constraint firstItem="Fqn-fA-l0v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yyf-Xg-xpp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Rb-fK-SQJ" secondAttribute="trailing" constant="54" id="aTL-JA-9iM"/>
+                            <constraint firstItem="4Rb-fK-SQJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="65" id="mrU-6u-S9C"/>
+                            <constraint firstItem="4Rb-fK-SQJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="mtd-qY-fJB"/>
+                            <constraint firstItem="Fqn-fA-l0v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pPP-jn-X1g"/>
                         </constraints>
                     </view>
                 </viewController>
